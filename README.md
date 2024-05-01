@@ -17,6 +17,10 @@ If your dataset is less than 20 images, you can manually caption each image by c
 Captioning wise, the more descriptive the caption the better the training will be, Clip text encoder is only 75 tokens long so you need to keep your caption under 75 tokens, if you go over 75 tokens the rest of the extra tokens will be ignored.
 
 It is still possible to use longer captions by using the `--max_token_length=225` argument in kohyass. This is useful because llava captions are pretty long. How this is done is the vectors of the tokens are aggregated so each token weights less.
+
+### Aesthetic captioning
+
+A method that is used is to seperate your image folders into further subfolders and label each folder based on the asethetic quality of the images and adjusting the number of steps in each folder, this can be done through the toml. For aesthetic captioning, you can just write a script to prepend some sort of aesthetic caption to your txt caption files. Eg. "high quality", "medium quality", "low quality" etc. though this requires a large number of images for the model to learn.
  
 ### Training specific tokens
 
