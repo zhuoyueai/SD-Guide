@@ -20,7 +20,7 @@ It is still possible to use longer captions by using the `--max_token_length=225
 
 ### Aesthetic captioning
 
-A method that is used is to seperate your image folders into further subfolders and label each folder based on the asethetic quality of the images and adjusting the number of steps in each folder, this can be done through the toml. For aesthetic captioning, you can just write a script to prepend some sort of aesthetic caption to your txt caption files. Eg. "high quality", "medium quality", "low quality" etc. though this requires a large number of images for the model to learn.
+A method that is used is to seperate your image folders into further subfolders and label each folder based on the asethetic quality of the images. Or adjusting the number of steps in each folder, which can be done through the toml, e.g low quality images traing 10 steps per epoch, high quality 40 steps per epoch and so on. For aesthetic captioning, you can just write a script to prepend some sort of aesthetic caption to your txt caption files. Eg. "high quality", "medium quality", "low quality" etc. though this requires a large number of images for the model to learn.
  
 ### Training specific tokens
 
@@ -197,6 +197,16 @@ Drag and drop the image [here](https://comfyanonymous.github.io/ComfyUI_examples
 ### Stacking Loras
 
 https://comfyanonymous.github.io/ComfyUI_examples/lora/
+
+# ComfyUI API
+
+Official API example:
+
+https://github.com/comfyanonymous/ComfyUI/blob/master/script_examples/websockets_api_example_ws_images.py
+
+Implementation:
+
+https://github.com/zhuoyueai/comfy-discord-bot
 
 # Other Interesting topics
 
