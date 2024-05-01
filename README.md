@@ -133,6 +133,10 @@ You can create a black and white mask for the images you are training. This help
 
 create a folder in your image directory like `/conditioning` or something, and put all the masks there with the same name as the image. Use the ` --masked_loss` argument in the training script
 
+Example of masking the head only for training
+![image](https://github.com/zhuoyueai/SD-Guide/assets/168568061/56ffbeda-e0dd-41de-b892-d8ac1213c41e)
+
+
 ### image upscaling
 
 For SD1.5 AI upscale the images to at least 512x512 area. For SDXL at least 1024x1024 area. It's not a must to upscale, you can still train with low resolution images, but generations will be worst for some reason.
