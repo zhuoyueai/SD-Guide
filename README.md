@@ -4,7 +4,7 @@ This guide requires at least 12gb vram gpu. and at least 40gb+ ram
 
 # Training with Kohya-ss/sd-scripts
 
-First download the [repo](https://github.com/kohya-ss/sd-scripts) and set it up in WSL. Make sure the setup your WSL to be able to use nvidia gpu if you have, I forgot how I did it but I remember I needed to. You need to set up an environment, I suggest using `python -m venv venv` or use conda/miniconda `conda create -n kohyass python=3.10`. You need to install pytorch etc and the requirements.txt as stated in the repo. If you have new GPU like 4060/4070 ... then you should install the pytorch CUDA 12.1 version for huge speed up. reason for installing in WSL is also the huge speedup, I tested it's up 2x speed up compared to Windows.
+First download the [repo](https://github.com/kohya-ss/sd-scripts) and set it up in WSL. alternatively you can use [this fork](https://github.com/bmaltais/kohya_ss), which has more script and GUI and installation script stuff . Make sure the setup your WSL to be able to use nvidia gpu if you have, I forgot how I did it but I remember I needed to. You need to set up an environment, I suggest using `python -m venv venv` or use conda/miniconda `conda create -n kohyass python=3.10`. You need to install pytorch etc and the requirements.txt as stated in the repo. If you have new GPU like 4060/4070 ... then you should install the pytorch CUDA 12.1 version for huge speed up. reason for installing in WSL is also the huge speedup, I tested it's up 2x speed up compared to Windows.
 
 ## Scraping Dataset
 
